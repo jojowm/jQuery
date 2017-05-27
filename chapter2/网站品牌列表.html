@@ -6,17 +6,46 @@
     <style>
         #brandBoard {
             height: 200px;
-            width: 400px;
+            width: 600px;
             border: 1px solid;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .list li {
-            float: left;
-            margin-left: 6px;
+
+        .list {
+            padding:0;
+            width: 600px;
             list-style: none;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-start;
         }
+
+        .list li {
+            width: 33.3%;
+            text-align: center;
+        }
+
+        .promoted {
+            background: yellow;
+        }
+
+        /*.list li {*/
+            /*float: left;*/
+            /*margin-left: 6px;*/
+            /*list-style: none;*/
+        /*}*/
+        /*.showmore {*/
+            /*clear: both;*/
+            /**/
+        /*}*/
     </style>
     <script src="./jquery.min.js"></script>
+    <script src="./showList.js"></script>
+
 </head>
 <body>
 <div id="brandBoard">
